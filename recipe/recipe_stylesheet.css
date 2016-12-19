@@ -1,0 +1,107 @@
+body {
+  background-color: lavenderblush;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  width: 60%;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+ul li a, figcaption a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header > img {
+  width: 100px;
+  float: left;
+}
+
+.ingredients-list {
+  list-style: square inside;
+  margin: 15px 0px;
+}
+
+ol {
+  list-style: upper-roman inside;
+}
+
+ol li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.user_review h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h2 + .user_review {
+  border-top: 1px solid black;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  background-image: url(./assets/stars.png);
+  vertical-align: bottom;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
+input:last-child {
+  background: gold;
+}
+
+input:last-child:hover {
+  -webkit-filter: brightness(90%);
+}
+
+ol li:nth-of-type(2n) {
+  background-color: lavenderblush;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  display: block;
+}
+
+aside {
+  display: inline-block;
+}
+
+input[type="text"], select {
+  display: block;
+  width: 175px;
+}
+
+select {
+  margin: 10px 0px;
+  width: 180px;
+}
+
+textarea {
+  width: 350px;
+}
+
+label {
+  display: block;
+}
