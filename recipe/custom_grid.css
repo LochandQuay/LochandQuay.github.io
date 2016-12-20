@@ -36,3 +36,9 @@
   display: block;
   clear: both;
 }
+
+@media all and (max-width: 900px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}
