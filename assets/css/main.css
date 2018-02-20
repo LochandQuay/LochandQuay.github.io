@@ -1557,7 +1557,7 @@
 		line-height: 1.75em;
 	}
 
-	a {
+	a, .faux-link {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -1565,11 +1565,13 @@
 		border-bottom: solid 1px #e4e4e4;
 		color: inherit;
 		text-decoration: none;
+		cursor: pointer;
 	}
 
-		a:hover {
+		a:hover, .faux-link:hover {
 			border-bottom-color: transparent;
 			color: #4acaa8 !important;
+			cursor: pointer;
 		}
 
 	strong, b {
@@ -2657,6 +2659,22 @@
 					color: inherit;
 				}
 
+/* Additional Basic Styling */
+
+	.resume-box {
+		height: 100%;
+		width: 100%;
+		object-fit: contain;
+		/* transition: all 0.5s ease; */
+	}
+	
+	.hide-resume {
+		display: none;
+		/* height: 0;
+		overflow: hidden; */
+		/* opacity: 0; */
+	}
+
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
@@ -3111,5 +3129,4 @@
 			#resume {
 				display: none;
 			}
-
-	}
+		}
